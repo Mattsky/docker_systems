@@ -1,0 +1,17 @@
+web:
+  image: appnomatt/laravel
+  ports:
+   - "80:80"
+  links:
+    - mariadb:mysql
+  volumes:
+    - ./public:/var/www/html
+mariadb:
+  image: mariadb
+  environment:
+    - MYSQL_ROOT_PASSWORD=T0aster5!
+    - MYSQL_DATABASE=drupal
+    - MYSQL_USER=drupal
+    - MYSQL_PASSWORD=password
+  ports:
+   - "3306:3306"
