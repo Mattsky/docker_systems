@@ -13,12 +13,16 @@ Current setups available:
 
 - Laravel - CentOS 7, PHP5.6+, Composer and Laravel preinstalled.
 
+- Apache-test - Debian 8 based Apache PHP Docker image with extensions installed specifically for Drupal 8 (see HOWTO below)
+
 HOWTO:
 
 - Clone project
 - Run INSTALL.sh (may need to set as executable) and wait for the systems to start.
 - Drupal: connect at 192.168.99.100, credentials are admin/admin.
 - Laravel: connect at 192.168.99.100/laravel for the default preinstalled project.
+
+- Apache-test: this is designed to be used as the image for the webserver container in the https://github.com/Mattsky/Demo-systems/tree/master/Kubernetes deployment definition.
 
 NOTES:
 
